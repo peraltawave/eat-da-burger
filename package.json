@@ -1,0 +1,33 @@
+{
+  "name": "eat-da-burger",
+  "version": "1.0.0",
+  "description": "Eat Da Burger Homework - using MySQL, Node, Express, Handlebars and a homemade ORM. This assignment is for instructor Davied Lovett at the University of Arizona Fall Semester 2018",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peraltawave/eat-da-burger.git"
+  },
+  "keywords": [
+    "burger",
+    "eat",
+    "mysql",
+    "handlebars",
+    "orm",
+    "express"
+  ],
+  "author": "Miguel Peralta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/peraltawave/eat-da-burger/issues"
+  },
+  "homepage": "https://github.com/peraltawave/eat-da-burger#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "mysql": "^2.16.0"
+  }
+}
