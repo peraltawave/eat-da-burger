@@ -1,5 +1,6 @@
 //  Inside `burger.js`, import `orm.js` into `burger.js`
 var orm = require('../config/orm.js');
+
 var burger = {
     selectTodo: function (callback) {
         orm.selectTodo(function (res) {
@@ -13,8 +14,8 @@ var burger = {
         });
     },
 
-    updateUno: function (callback) {
-        orm.updateUno(function (res) {
+    updateUno: function (id, callback) {
+        orm.updateUno([id], function (res) {
             callback(res);
         });
     }
