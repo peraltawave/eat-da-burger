@@ -1,4 +1,4 @@
-var express = require('express');
+var express = require("express");
 
 var router = express.Router();
 var burger = require("../models/burger.js");
@@ -14,7 +14,7 @@ That is what we are gonna do right now, foo*/
 
 
 router.get("/", function(req, res){ // when a user hits our root url
-    burger.selectTodo(function(data){ // it runs burger selectTodo function req is function(data) result is a var we create called hbsObject which is an object made from burgers data - which has the id,name and devoured
+    burger.selectTodo(function(data){ // it runs burger selectTodo function req is function(data) result is a var we create called hbsObject which is an object made from burgers data - which has the id, name and devoured
         var hbsObject = {
             burgers: data
         };
