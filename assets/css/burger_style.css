@@ -1,6 +1,5 @@
 body {
-    font-family: 'IBM Plex Sans', sans-serif;
-    width: 100%;
+    font-family: 'Arvo', serif; width: 100%;
     background-image: url('../img/bg001.jpg');
 }
 
@@ -25,12 +24,13 @@ h1 {
 }
 
 li {
-    font-size: 20px;
+    font-size: 50px;
     list-style-type: none;
 }
 
 
-#add {
+/* #add {
     clear: both;
-    margin-left: 25%;
-}
+    margin-left: 50%;
+    background-color: blue;
+} */
