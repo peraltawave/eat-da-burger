@@ -61,7 +61,7 @@ var orm = { // var is an object of which the first item is selectAll
                 throw err;
             }
             callback(result); //otherwise do callback
-            console.log(result);
+            // console.log(result);
         });
     },
 
@@ -72,7 +72,7 @@ var orm = { // var is an object of which the first item is selectAll
                 throw err;
             }
             callback(result);
-            console.log(result);
+            // console.log(result);
         });
     },
 
@@ -84,7 +84,7 @@ var orm = { // var is an object of which the first item is selectAll
                 throw err;
             }
             callback(result);
-            console.log(result);
+            // console.log(result);
         });
     }
 };
