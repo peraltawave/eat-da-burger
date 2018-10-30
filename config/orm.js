@@ -9,27 +9,29 @@ var connection = require("./connection.js");
 // https://en.wikipedia.org/wiki/SQL_injection
 
 
-var orm = { // var is an object of which the first item is selectAll
+var orm = { // orm is an object of which the first item is selectTodo
 
-    selectTodo: function (callback) { // selectAll is also a function called 'callback'
+    selectTodo: function (mike) { // selectTODO is  a function called 'mike'
         var queryString = "SELECT * FROM burgers"; // which queries the db
         connection.query(queryString, function (err, result) { // first it has to connect, if it fails, throw err
             if (err) {
                 throw err;
             }
-            callback(result); //otherwise do callback
+            mike(result); //otherwise do callback
             // console.log(result);
         });
     },
 
-    insertUno: function (burger, callback) {
+    insertUno: function (newBurgerName, callback) {
         var queryString = "INSERT INTO burgers (burger_name) VALUES (?)";
-        connection.query(queryString, [burger], function (err, result) {
+        console.log(newBurgerName);
+        connection.query(queryString, [newBurgerName], function (err, result) {
+            
             if (err) {
                 throw err;
             }
             callback(result);
-            // console.log(result);
+            
         });
     },
 

@@ -7,8 +7,8 @@ var burger = {
         });
     },
 
-    insertUno: function (callback) {
-        orm.insertUno(function (res) {
+    insertUno: function (newBurger, callback) {
+        orm.insertUno(newBurger, function (res) {
             callback(res);
         });
     },
