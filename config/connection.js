@@ -21,6 +21,7 @@ connection.connect(function(err) {
     return;
   }
   console.log("connected as id " + connection.threadId);
+  console.log("using port " + port);
 });
 
 // Export connection
